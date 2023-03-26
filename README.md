@@ -107,6 +107,14 @@ To run the project, execute the following commands in your Ruby terminal:
 
 👤 **Wali Muhammad**
 
+
+
+## 👥 Authors <a name="Joseph Ogbole"></a>
+
+- GitHub: [@ONJoseph](https://github.com/ONJoseph)
+- Twitter: [@ONJoseph1](https://twitter.com/ONJoseph1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/o-n-joseph-ba8425147/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
