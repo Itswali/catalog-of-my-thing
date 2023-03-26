@@ -108,6 +108,11 @@ To run the project, execute the following commands in your Ruby terminal:
 👤 **Wali Muhammad**
 
 
+👨‍💻 Pierre Barba
+
+- GitHub: <a href="https://github.com/" target="_blank" rel="noopener noreferrer">@pierrebarba</a>
+- Twitter: <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">@pierrebarba</a>
+- LinkedIn: <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer">Pierre Barba</a>
 
 ## 👥 Authors <a name="Joseph Ogbole"></a>
 
