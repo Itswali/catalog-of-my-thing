@@ -2,12 +2,15 @@ require 'securerandom'
 require_relative 'item'
 
 class Book < Item
-    def initialize(publisher, cover_state)
-        @publisher = publisher 
-        @cover_state = cover_state
-    end
+  attr_accessor :publisher, :cover_state
 
-    def can_be_archived?
-    end    
+  def initialize(genre, author, label, publish_date, publisher)
+
+    super genre, author, label, publish_date
+
+    @publisher = publisher
+    @cover_state = 'bad'
+  end
+  #   def can_be_archived?
+  #   end
 end
-
