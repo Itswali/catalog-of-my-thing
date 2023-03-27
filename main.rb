@@ -1,4 +1,3 @@
-# this is to create the main function
 #!/usr/bin/env ruby
 
 require_relative './show_menu'
