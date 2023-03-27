@@ -1,14 +1,15 @@
 require 'securerandom'
 require_relative 'item'
 
-class Label 
-    def initialize (id = securerandom.uuid, title, color)
-        @id = id
-        @title = title
-        @color = color
-        @item = item []
-    end
+class Label
+  attr_accessor :title, :color, :id, :items
 
-    def add_item
-    end
+  def initialize(title, color, id = SecureRandom.uuid)
+    @id = id
+    @title = title
+    @color = color
+    @item = item []
+  end
+  #   def add_item
+  #   end
 end
