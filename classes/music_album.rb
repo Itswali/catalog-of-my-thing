@@ -2,10 +2,14 @@ require 'securerandom'
 require_relative 'item'
 
 class Musicalbum < Item
-    def initialize(on_spotify)
-        @on_spotify = false
-    end
+  attr_accessor :on_spotify
 
-    def can_be_archived?
-    end    
+  def initialize(genre, author, label, publish_date, on_spotify: false)
+    super genre, author, label, publish_date
+
+    @on_spotify = on_spotify
+  end
+
+  #   def can_be_archived?
+  #   end
 end
