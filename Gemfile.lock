@@ -25,18 +25,10 @@ GEM
     unicode-display_width (2.4.2)
 
 PLATFORMS
-<<<<<<< HEAD
-  ruby
-=======
   x64-mingw-ucrt
->>>>>>> dev
 
 DEPENDENCIES
   rubocop (>= 1.0, < 2.0)
 
 BUNDLED WITH
-<<<<<<< HEAD
-   1.17.2
-=======
    2.4.6
->>>>>>> dev
