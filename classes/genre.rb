@@ -2,12 +2,13 @@ require 'securerandom'
 require_relative 'item'
 
 class Genre
-    def initialize (id = securerandom.uuid, name)
-        @id = id
-        @name = name
-        @item = item []
-    end
+  attr_accessor :name, :id, :items
 
-    def add_item
-    end
+  def initialize(name, id = SecureRandom.uuid)
+    @id = id
+    @name = name
+    @item = item []
+  end
+
+  def add_item; end
 end
