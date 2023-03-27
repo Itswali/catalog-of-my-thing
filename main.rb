@@ -3,7 +3,6 @@
 require_relative './show_menu'
 require_relative './process_options'
 
-
 def main
   loop do
     show_menu
