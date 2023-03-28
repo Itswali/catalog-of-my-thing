@@ -18,6 +18,6 @@ def process_options(usr_inp, app)
   if options.key?(chosen_option)
     options[chosen_option].call
   else
-    puts "\e[31mInvalid selectin! please try again.\e[0m\n"
+    puts "\e[31mInvalid selection! please try again.\e[0m\n"
   end
 end
