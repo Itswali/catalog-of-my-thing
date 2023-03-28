@@ -2,8 +2,10 @@
 
 require_relative './show_menu'
 require_relative './process_options'
+require_relative './app'
 
 def main
+  app = App.new
   loop do
     show_menu
     user_input = gets.chomp.upcase
@@ -12,7 +14,7 @@ def main
       puts "\e[31mThank you for using this app! ♥️ \e[0m"
       exit
     end
-    process_options(user_input)
+    process_options(user_input, app)
   end
 end
 main
