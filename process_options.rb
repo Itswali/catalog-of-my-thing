@@ -11,7 +11,8 @@ def process_options(usr_inp, app)
     '9' => -> { app.add_book },
     'A' => -> { puts 'You chose option A' },
     'B' => -> { puts 'You chose option B' },
-    'C' => -> { puts 'You chose option C' }
+    'C' => -> { puts 'You chose option C' },
+    'L' => -> { app.add_label }
   }
 
   chosen_option = usr_inp

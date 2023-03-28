@@ -31,6 +31,19 @@ class App
     end
   end
 
+  def add_label
+    puts "\nAdd a new label"
+    print 'Title:'
+    title = gets.chomp
+    print 'Color:'
+    color = gets.chomp
+    print 'items:'
+    items = gets.chomp
+    label = Label.new(title, color, items)
+    @labels << label
+    puts 'Your label has been added successfully!'
+  end
+
   def add_book
     puts "\nAdd a new book"
     print 'Publisher:'

@@ -12,6 +12,7 @@ def show_menu
     A - Add a music album
     B - Add a movie
     C - Add a game
+    L - Add a label
     \e[31mD - Exit\e[0m"
   print "\nYour choice: "
 end
