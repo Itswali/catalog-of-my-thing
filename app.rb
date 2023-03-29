@@ -1,5 +1,8 @@
+require 'boolean'
 require_relative './classes/book'
 require_relative './classes/label'
+require_relative './classes/genre'
+require_relative './classes/music_album'
 
 class App
   attr_reader :books, :labels
@@ -7,6 +10,17 @@ class App
   def initialize
     @books = []
     @labels = []
+    @genre = []
+  end
+
+  def set_data
+    genre_one = Genre.new('Rock')
+    genre_dos = Genre.new('Rap')
+    genre_tres = Genre.new('pop')
+    # label_one
+    @genre << genre_dos
+    @genre << genre_one
+    @genre << genre_tres
   end
 
   def list_all_books
@@ -27,6 +41,17 @@ class App
     puts "\n--------------------------------------------"
     @labels.each do |label|
       puts "#{label.title} \t| #{label.color}"
+      puts "\n--------------------------------------------"
+    end
+  end
+
+  def list_all_genre
+    puts "\nNo labels added yet" if @genre.empty?
+    puts "\nAll genre:\n\n"
+    puts "\ngenre \t| Color"
+    puts "\n--------------------------------------------"
+    @genre.each_with_index do |genre, i|
+      puts "#{i + 1} \t| #{genre.name}"
       puts "\n--------------------------------------------"
     end
   end
@@ -55,4 +80,21 @@ class App
     @books << Book.new(publisher, cover_state, publish_date)
     puts 'Your book has been added successfully!'
   end
+
+def add_music
+  puts "\nAdd a new music"
+  print 'author:'
+  author = gets.chomp.to_s
+  print 'genre:'
+  genre = gets.chomp.to_s
+  print 'label:'
+  label = gets.chomp.to_s
+  print 'publish_date:'
+  publish_date = gets.chomp.to_s
+  print 'on_spotify:'
+  on_spotify = gets.chomp.to_s
+  music_album = Musicalbum.new(genre: genre, author: author, label: label, publish_date: publish_date)
+  @Musicalbum << Musicalbum
+  puts 'Your Musicalbum has been added successfully!'
+end
 end
