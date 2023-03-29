@@ -6,8 +6,9 @@ require_relative './process_options'
 require_relative './app'
 
 def main
-  $stdout.clear_screen
+  # $stdout.clear_screen
   app = App.new
+  app.set_data
   loop do
     show_menu
     user_input = gets.chomp.upcase
