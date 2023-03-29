@@ -1,14 +1,18 @@
-require 'securerandom'
-require_relative 'item'
-
 class Genre
-  attr_accessor :name, :id, :items
+  attr_accessor :id, :name, :items
 
-  def initialize(name, id = SecureRandom.uuid)
-    @id = id
+  def initialize(name)
+    @id = rand(1..100_00)
     @name = name
-    @item = item []
+    @items = []
   end
 
-  def add_item; end
+  def add_item(item)
+    @item << item  
+    item.genre = self
+  end
+
+  def self.list_all_genre
+    ObjectSpace.each_object(self).to_a
+  end
 end
