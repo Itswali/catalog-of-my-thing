@@ -1,53 +1,22 @@
 class Item
-  attr_accessor  :genre, :author, :source, :label, :publish_date
+  attr_accessor :genre, :author, :label, :publish_date
 
-  def initialize(genre: nil, author: nil , source: nil, label: nil, publish_date: nil)
+  def initialize(genre, author, label, publish_date)
     @id = rand(1..100_00)
     @genre = genre
     @author = author
-    @source = source
     @label = label
     @publish_date = publish_date
     @archived = false
-  end
-
-  def genre=(new_genre)
-    @genre = new_genre
-    new_genre.items.push(self) unless new_genre.items.include?(self)
-  end
-
-  def author=(new_author)
-    @author = new_author
-    new_author.items.push(self) unless new_author.items.include?(self)
-  end
-
-  def source=(new_source)
-    @source = new_source
-    new_source.items.push(self) unless new_source.items.include?(self)
-  end
-
-  def label=(new_label)
-    @label = new_label
-    new_label.items.push(self) unless new_label.items.include?(self)
-  end
-
-  def can_be_archived?
-    (Time.now.year - @publish_date.year) > 10
   end
 
   def move_to_archive()
     @archived = true if can_be_archived?
   end
 
-  def to_hash
-    {
-      id: @id,
-      genre: @genre,
-      author: @author,
-      source: @source,
-      label: @label,
-      publish_date: @publish_date,
-      archived: @archived
-    }
+  private
+
+  def can_be_archived?
+    (Time.now.year - @publish_date.year) > 10
   end
 end
