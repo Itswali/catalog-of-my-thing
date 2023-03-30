@@ -1,5 +1,8 @@
-<a name="readme-top"></a>
+<div align="center">
+  <p align='center'><img  src="catalogy.gif" width="490" height="400" ></p>
+  <h1><b>Vet Clinic</b></h1>
 
+</div>
 <div align="center">
 
   <h3><b>Catalog of my things</b></h3>
