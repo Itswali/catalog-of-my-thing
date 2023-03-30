@@ -23,7 +23,7 @@ describe Item do
       it 'sets the archived attribute to true' do
         item = Item.new(genre, author, label, Date.parse('2000-06-26'))
 
-        item.move_to_archive()
+        item.move_to_archive
 
         # expect(item.archived).to eq(true)
       end
@@ -33,8 +33,7 @@ describe Item do
       it 'leaves the archived attribute as false' do
         item = Item.new(genre, author, label, Date.parse('2019-06-26'))
 
-        item.move_to_archive()
-
+        item.move_to_archive
       end
     end
   end

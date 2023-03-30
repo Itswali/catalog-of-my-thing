@@ -33,7 +33,6 @@ RSpec.describe Author do
       expect(author.first_name).to eq 'John'
       expect(author.last_name).to eq 'Doe'
     end
-
   end
 
   describe '#to_json' do
@@ -53,5 +52,4 @@ RSpec.describe Author do
       expect(author.last_name).to eq 'Doe'
     end
   end
-
 end

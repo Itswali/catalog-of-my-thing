@@ -3,8 +3,6 @@ require_relative '../classes/genre'
 require_relative '../classes/author'
 require_relative '../classes/label'
 
-
-
 RSpec.describe MusicAlbum do
   let(:genre) { Genre.new('Rock') }
   let(:author) { Author.new('John Smith', 'johnsmith@example.com') }
@@ -51,14 +49,14 @@ RSpec.describe MusicAlbum do
   describe '#to_json' do
     it 'returns a JSON string representation of the music album' do
       album = MusicAlbum.new(genre, author, label, publish_date, on_spotify: true)
-      json_string = '{"genre_id":' + genre.id.to_s + ',"author_id":' + author.id.to_s + ',"label_id":' + label.id.to_s + ',"publish_date":"2010-01-01","on_spotify":true}'
+      json_string = "{\"genre_id\":#{genre.id},\"author_id\":#{author.id},\"label_id\":#{label.id},\"publish_date\":\"2010-01-01\",\"on_spotify\":true}"
       expect(album.to_json).to eq json_string
     end
   end
 
   describe '.from_hash' do
     it 'returns a new MusicAlbum instance from a hash' do
-      album_hash = {'genre_id' => genre.id, 'author_id' => author.id, 'label_id' => label.id, 'publish_date' => '2010-01-01', 'on_spotify' => true}
+      album_hash = { 'genre_id' => genre.id, 'author_id' => author.id, 'label_id' => label.id, 'publish_date' => '2010-01-01', 'on_spotify' => true }
       album = MusicAlbum.from_hash(album_hash)
       expect(album).to be_a MusicAlbum
       expect(album.genre).to eq genre
@@ -88,7 +86,6 @@ RSpec.describe MusicAlbum do
       albums = MusicAlbum.from_hash_array(album_hashes)
       expect(albums).to be_an(Array)
       expect(albums.length).to eq(2)
-     
     end
   end
 end

@@ -12,7 +12,6 @@ describe Genre do
     end
   end
 
-
   describe '.list_all_genre' do
     it 'returns an array of all genre objects' do
       expect(Genre.list_all_genre).to be_an(Array)
