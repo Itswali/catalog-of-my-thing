@@ -116,7 +116,7 @@ class App
     print 'publish_date:'
     publish_date = gets.chomp
     MusicAlbum.new(genre_obj, author_obj, label_obj, publish_date)
-    puts 'Your Musicalbum has been added successfully!'
+    puts 'Your Music album has been added successfully!'
   end
 
   def list_all_albums
