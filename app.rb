@@ -126,7 +126,7 @@ class App
     print 'publish_date:'
     publish_date = gets.chomp
     print 'on_spotify:'
-    on_spotify = gets.chomp.to_s
+    on_spotify = gets.chomp
     Music_album.new(genre_obj, author_obj, label_obj, publish_date)
     puts 'Your Musicalbum has been added successfully!'
   end
