@@ -115,16 +115,16 @@ class App
     label_obj = Label.create_label(label_title, label_color)
     print 'publish_date:'
     publish_date = gets.chomp
-    Music_album.new(genre_obj, author_obj, label_obj, publish_date)
+    MusicAlbum.new(genre_obj, author_obj, label_obj, publish_date)
     puts 'Your Musicalbum has been added successfully!'
   end
 
   def list_all_albums
-    puts "\nNo albums added yet" if Music_album.list_all_music_album.empty?
+    puts "\nNo albums added yet" if MusicAlbum.list_all_music_album.empty?
     puts "\nAll albums:\n\n"
     puts "\nalbum \t| Color"
     puts "\n--------------------------------------------"
-    Music_album.list_all_music_album.each_with_index do |album, i|
+    MusicAlbum.list_all_music_album.each_with_index do |album, i|
       puts "#{i + 1} \t|:album #{album.genre.name}  author: #{"#{album.author.first_name} #{album.author.last_name}"} label: #{"#{album.label.title} #{album.label.color}"} publish_date: #{album.publish_date}"
       puts "\n--------------------------------------------"
     end
