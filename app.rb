@@ -17,21 +17,12 @@ class App
     @author = []
   end
 
-  def set_data
-    genre_one = Genre.new('Rock')
-    genre_dos = Genre.new('Rap')
-    genre_tres = Genre.new('pop')
-    @genre << genre_dos
-    @genre << genre_one
-    @genre << genre_tres
-  end
-
   def list_all_authors
     puts "\nNo authors added yet" if Author.list_all_authors.empty?
     puts "\nAll authors:\n\n"
     puts "\nfirst_name \t| last_name"
     puts "\n--------------------------------------------"
-    Author.list_all_authors.each do |author, i|
+    Author.list_all_authors.each_with_index do |author, i|
       puts "#{i + 1} first name: #{author.first_name} \t| last name: #{author.last_name}"
       puts "\n--------------------------------------------"
     end
@@ -125,8 +116,6 @@ class App
     label_obj = Label.create_label(label_title, label_color)
     print 'publish_date:'
     publish_date = gets.chomp
-    print 'on_spotify:'
-    on_spotify = gets.chomp
     Music_album.new(genre_obj, author_obj, label_obj, publish_date)
     puts 'Your Musicalbum has been added successfully!'
   end
