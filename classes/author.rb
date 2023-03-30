@@ -1,11 +1,8 @@
 class Author
   attr_accessor :first_name, :last_name, :id, :items
 
-
   def initialize(first_name, last_name, id = rand(1..100_00))
     @id = id
-  def initialize(first_name, last_name)
-    @id = rand(1..100_00)
     @first_name = first_name
     @last_name = last_name
     @items = []
@@ -24,6 +21,7 @@ class Author
     author_obj = list_all_authors.find { |author| author.first_name == first_name && author.last_name == last_name }
     author_obj.nil? ? new(first_name, last_name) : author_obj
   end
+
   def to_json(*_option)
     {
       id: @id,
@@ -39,5 +37,4 @@ class Author
   def self.from_hash_array(array)
     array.each { |author| from_hash(author) }
   end
-
 end

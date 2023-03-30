@@ -57,7 +57,7 @@ end
 def load_albums
   return unless File.exist?('data/albums.json') && File.size?('data/albums.json')
 
-  Music_album.from_hash_array(JSON.parse(File.read('data/albums.json')))
+  MusicAlbum.from_hash_array(JSON.parse(File.read('data/albums.json')))
 end
 
 def save_authors
@@ -77,7 +77,7 @@ end
 
 def save_albums
   File.exist?('data/albums.json') ? File.open('data/albums.json', 'w') : File.new('data/albums.json', 'w')
-  File.write('data/albums.json', Music_album.list_all_music_album.to_json)
+  File.write('data/albums.json', MusicAlbum.list_all_music_album.to_json)
 end
 
 def save_books

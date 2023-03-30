@@ -1,12 +1,11 @@
 #!/usr/bin/env ruby
-require 'io/console'
+
 require_relative './show_menu'
 require_relative './process_options'
 require_relative './app'
 require_relative './utilities'
 
 def main
-  # $stdout.clear_screen
   app = App.new
   load_data
   loop do
