@@ -1,6 +1,6 @@
 require_relative 'item'
 
-class Music_album < Item
+class MusicAlbum < Item
   attr_accessor :on_spotify
 
   def initialize(genre, author, label, publish_date, on_spotify: false)
