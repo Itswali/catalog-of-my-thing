@@ -40,9 +40,7 @@ RSpec.describe MusicAlbum do
 
   describe '.list_all_music_album' do
     it 'returns an array of all MusicAlbum instances' do
-      album1 = MusicAlbum.new(genre, author, label, publish_date)
-      album2 = MusicAlbum.new(genre, author, label, publish_date)
-      # expect(MusicAlbum.list_all_music_album).to match_array [album1, album2]
+      # album1 = MusicAlbum.new(genre, author, label, publish_date)
     end
   end
 
