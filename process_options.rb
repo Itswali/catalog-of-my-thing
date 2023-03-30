@@ -1,18 +1,14 @@
 def process_options(usr_inp, app)
   options = {
     '1' => -> { app.list_all_books },
-    '2' => -> { puts 'You chose option 2' },
-    '3' => -> { puts 'You chose option 3' },
-    '4' => -> { puts 'You chose option 4' },
-    '5' => -> { puts 'You chose option 5' },
-    '6' => -> { app.list_all_labels },
-    '7' => -> { puts 'You chose option 7' },
-    '8' => -> { puts 'You chose option 8' },
-    '9' => -> { app.add_book },
-    'A' => -> { puts 'You chose option A' },
-    'B' => -> { puts 'You chose option B' },
-    'C' => -> { puts 'You chose option C' },
-    'L' => -> { app.add_label }
+    '2' => -> { app.list_all_albums },
+    '3' => -> { app.list_all_games },
+    '4' => -> { app.list_all_genre },
+    '5' => -> { app.list_all_labels },
+    '6' => -> { app.list_all_authors },
+    '7' => -> { app.add_book },
+    '8' => -> { app.add_music },
+    '9' => -> { app.add_game }
   }
 
   chosen_option = usr_inp
