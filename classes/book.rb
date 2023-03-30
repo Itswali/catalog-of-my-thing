@@ -6,7 +6,7 @@ class Book < Item
   def initialize(genre, author, label, publish_date, publisher)
     super(genre, author, label, publish_date)
     @publisher = publisher
-    @cover_state = 'bad'
+    @cover_state = 'good'
   end
 
   def can_be_archived?
