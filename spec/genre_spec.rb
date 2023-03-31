@@ -26,7 +26,7 @@ describe Genre do
       expect(new_genre.name).to eq(new_genre_name)
       expect(Genre.list_all_genre).to include(new_genre)
     end
-
+  end
   describe '#to_json' do
     it 'returns a JSON string representation of the genre object' do
       json_str = genre.to_json
