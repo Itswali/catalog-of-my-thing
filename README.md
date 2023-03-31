@@ -1,5 +1,8 @@
-<a name="readme-top"></a>
+<div align="center">
+  <p align='center'><img  src="catalogy.gif" width="400" height="350" ></p>
+  <h1><b>Vet Clinic</b></h1>
 
+</div>
 <div align="center">
 
   <h3><b>Catalog of my things</b></h3>
@@ -67,7 +70,7 @@ This is a repository that includes code that allows the user to create a list of
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Not available yet
+(https://drive.google.com/file/d/1Gk6lY4Vl01ND7kPoDxSiq0pH82OlVif0/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +108,23 @@ To run the project, execute the following commands in your Ruby terminal:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Wali Muhammad**
+👤 **Wali-Muhammad**
+
+- GitHub: [@Itswali](https://github.com/Itswali)
+- Twitter: [@Wali-Muhammad](https://twitter.com/WaliMuh94818599)
+- LinkedIn: [@Wali Muhammad](https://www.linkedin.com/in/wali-muhammad-666040244/)
+
+👨‍💻 Pierre Barba
+
+- GitHub: <a href="https://github.com/" target="_blank" rel="noopener noreferrer">@pierrebarba</a>
+- Twitter: <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">@pierrebarba</a>
+- LinkedIn: <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer">Pierre Barba</a>
+
+## 👥 Authors <a name="Joseph Ogbole"></a>
+
+- GitHub: [@ONJoseph](https://github.com/ONJoseph)
+- Twitter: [@ONJoseph1](https://twitter.com/ONJoseph1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/o-n-joseph-ba8425147/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
