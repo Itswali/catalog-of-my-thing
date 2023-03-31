@@ -23,7 +23,6 @@ describe Item do
         item = Item.new(genre, author, label, Date.parse('2000-06-26'))
 
         item.move_to_archive
-        
       end
     end
 
