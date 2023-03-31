@@ -40,7 +40,6 @@ RSpec.describe MusicAlbum do
 
   describe '.list_all_music_album' do
     it 'returns an array of all MusicAlbum instances' do
-      # album1 = MusicAlbum.new(genre, author, label, publish_date)
     end
   end
 
