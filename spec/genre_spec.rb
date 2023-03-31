@@ -28,7 +28,6 @@ describe Genre do
     end
 
     it 'returns an existing genre object if it already exists' do
-      # existing_genre = Genre.create_genre(genre_name)
     end
   end
 
