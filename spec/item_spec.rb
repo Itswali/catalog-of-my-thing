@@ -14,7 +14,6 @@ describe Item do
       expect(item.author).to eq(author)
       expect(item.label).to eq(label)
       expect(item.publish_date).to eq(publish_date)
-      # expect(item.archived).to eq(false)
     end
   end
 
@@ -24,8 +23,7 @@ describe Item do
         item = Item.new(genre, author, label, Date.parse('2000-06-26'))
 
         item.move_to_archive
-
-        # expect(item.archived).to eq(true)
+        
       end
     end
 
