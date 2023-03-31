@@ -37,12 +37,7 @@ RSpec.describe MusicAlbum do
       expect(album.can_be_archived?).to eq true
     end
   end
-
-  describe '.list_all_music_album' do
-    it 'returns an array of all MusicAlbum instances' do
-    end
-  end
-
+  
   describe '#to_json' do
     it 'returns a JSON string representation of the music album' do
       album = MusicAlbum.new(genre, author, label, publish_date, on_spotify: true)
